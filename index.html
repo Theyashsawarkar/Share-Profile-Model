@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Share Modal | YASH SAWARKAR</title>
+    <link
+      rel="shortcut icon"
+      href="https://icon-library.com/images/employee-icon-png/employee-icon-png-17.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <div class="wrapper">
+      <div class="card-wrapper">
+        <div>
+          <img
+            src="https://media.licdn.com/dms/image/C5603AQG69_MbRdSOyg/profile-displayphoto-shrink_200_200/0/1645906334382?e=1696464000&v=beta&t=8i5QT02O9xOf8GpbGNy-2zbUgTl2bYEyLFxogYhWDR0"
+            alt=""
+          />
+        </div>
+        <div class="user-name">
+          <h2>YASH SAWARKAR</h2>
+        </div>
+        <div class="designation">
+          <h3>FULL STACK DEVELOPER</h3>
+        </div>
+        <div class="bottom-group">
+          <button onclick="openModal()" class="btn-share btn-card">
+            <i class="fa-solid fa-share"></i>
+            <div>share my profile</div>
+          </button>
+
+          <button class="btn-follow btn-card" id="resume">
+            <a
+              href="https://drive.google.com/file/d/11alanq-CwrqRiDss7j0Moje_oLKKOF6f/view?usp=sharing"
+            >
+              My Resume</a
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Component -->
+    <div class="modal">
+      <div class="modal-header">
+        <h1>Share My Profile</h1>
+        <div>
+          <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+        </div>
+      </div>
+
+      <div>
+        <h3>Share this via</h3>
+
+        <div class="icon-container">
+          <a href="https://github.com/Theyashsawarkar" class="icon" id="github">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/theyashsawarkar/"
+            class="icon"
+            id="linkedin"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/theyashsawarkar/"
+            class="icon"
+            id="instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.wa.me/917507405875" class="icon" id="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a
+            href="https://www.yashsawarkar01@gmail.com"
+            class="icon"
+            id="gmail"
+          >
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" onclick="closeModal()"></div>
+
+    <script
+      src="https://kit.fontawesome.com/58a810656e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
